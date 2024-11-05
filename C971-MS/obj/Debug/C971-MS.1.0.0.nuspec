@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>C971-MS</id>
+    <version>1.0.0</version>
+    <authors>C971-MS</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="f0f1f6ad2ae5922ac309b21ce2306d5b06ab206d" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Plugin.LocalNotification" version="10.1.8" exclude="Build,Analyzers" />
+        <dependency id="SQLitePCLRaw.bundle_green" version="2.1.8" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.9.172" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios17.2">
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Plugin.LocalNotification" version="10.1.8" exclude="Build,Analyzers" />
+        <dependency id="SQLitePCLRaw.bundle_green" version="2.1.8" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.9.172" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-maccatalyst17.2">
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Plugin.LocalNotification" version="10.1.8" exclude="Build,Analyzers" />
+        <dependency id="SQLitePCLRaw.bundle_green" version="2.1.8" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.9.172" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-windows10.0.19041">
+        <dependency id="Microsoft.Data.SqlClient" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.70" exclude="Build,Analyzers" />
+        <dependency id="Plugin.LocalNotification" version="10.1.8" exclude="Build,Analyzers" />
+        <dependency id="SQLitePCLRaw.bundle_green" version="2.1.8" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.9.172" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-android\C971-MS.runtimeconfig.json" target="lib\net8.0-android34.0\C971-MS.runtimeconfig.json" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-android\C971-MS.dll" target="lib\net8.0-android34.0\C971-MS.dll" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-android\C971-MS.xml" target="lib\net8.0-android34.0\C971-MS.xml" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-ios\iossimulator-x64\C971-MS.runtimeconfig.json" target="lib\net8.0-ios17.2\C971-MS.runtimeconfig.json" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-ios\iossimulator-x64\C971-MS.dll" target="lib\net8.0-ios17.2\C971-MS.dll" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\C971-MS.runtimeconfig.json" target="lib\net8.0-maccatalyst17.2\C971-MS.runtimeconfig.json" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\C971-MS.dll" target="lib\net8.0-maccatalyst17.2\C971-MS.dll" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\C971-MS.runtimeconfig.json" target="lib\net8.0-windows10.0.19041\C971-MS.runtimeconfig.json" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\C971-MS.dll" target="lib\net8.0-windows10.0.19041\C971-MS.dll" />
+    <file src="C:\C971\C971-MS\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net8.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

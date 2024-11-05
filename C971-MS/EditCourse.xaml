@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_MS.EditCourse"
+             Title="EditCourse">
+    <VerticalStackLayout
+    Padding="0,0"
+    Spacing="10" Background="#FFFFFF">
+        <HorizontalStackLayout
+        Background ="#003058"
+        Spacing="15"
+        VerticalOptions="StartAndExpand" MaximumHeightRequest="75">
+            <Image
+            Source="wguowl.jpg"
+            Aspect="AspectFit"
+            SemanticProperties.Description="WGU Logo"/>
+            <Label
+            Text="WGU Course Tracker"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
+            VerticalTextAlignment="Center" 
+            FontAutoScalingEnabled="True" TextColor="#FFFFFF" FontSize="Medium"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+         Padding="20,0"
+         Spacing="25">
+            <Label
+             x:Name="TermLabel"
+             Text=""
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"
+             Padding="0,0,0,20"/>
+            
+            
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                VerticalOptions="Center"
+                Text="Name: "
+                TextColor="Black"/>
+
+                <Entry 
+                        Text="{Binding CourseName}"
+                        x:Name="NameEntry" MaxLength="50"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                VerticalOptions="Center"
+                Text="Status: "
+                TextColor="Black"/>
+
+                <Picker 
+                SelectedItem="{Binding Status}"
+                x:Name="StatusPicker"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                VerticalOptions="Center"
+                Text="Start Date: "
+                TextColor="Black"/>
+
+                <DatePicker 
+                Date="{Binding StartDate}"
+                x:Name="StartDatePicker"
+                MinimumDate="2024-07-01"></DatePicker>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                VerticalOptions="Center"
+                Text="End Date: "
+                TextColor="Black"/>
+                <DatePicker 
+                    Date="{Binding EndDate}"
+                    x:Name="EndDatePicker"
+                    MinimumDate="2024-07-01"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                    VerticalOptions="Center"
+                    Text="Instructor: "
+                    TextColor="Black"/>
+                <Entry 
+                        Text="{Binding InstructorName}"
+                        x:Name="Instructor" MaxLength="50"/>
+
+            </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                    VerticalOptions="Center"
+                    Text="Instructor Email: "
+                    TextColor="Black"/>
+
+                <Entry 
+                        Text="{Binding InstructorEmail}"
+                        x:Name="Email" MaxLength="50"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                    VerticalOptions="Center"
+                    Text="Instructor Phone: "
+                    TextColor="Black"/>
+                <Entry 
+                        Text="{Binding InstructorPhone}"
+                        x:Name="Phone" MaxLength="20"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="30">
+                <Label
+                    VerticalOptions="Center"
+                    Text="Notifications: "
+                    TextColor="Black"/>
+                <Button
+                    x:Name="NotificationsBtn"
+                    Text="" 
+                    Clicked="Notifications_Clicked"
+                    Background="#DEDEDE"
+                    BorderWidth="1" BorderColor="#000000" HorizontalOptions="End" TextColor="#000000"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout
+        x:Name="BottomButtons"
+            HorizontalOptions="Center"
+        Padding="0,0,0,0"
+        Spacing="20">
+            <Button
+            x:Name="SaveBtn"
+            Text="Save" 
+            Clicked="SaveBtn_Clicked"
+            Background="#DEDEDE"
+            BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+            <Button
+            x:Name="CancelBtn"
+            Text="Cancel" 
+            Clicked="CancelBtn_Clicked"
+            Background="#DEDEDE"
+            BorderWidth="1" BorderColor="#000000" HorizontalOptions="End" TextColor="#000000"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

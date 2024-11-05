@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_MS.EditNotifications">
+    <VerticalStackLayout
+    Padding="0,0"
+    Spacing="10" Background="#FFFFFF">
+        <HorizontalStackLayout
+        Background ="#003058"
+        Spacing="15"
+        VerticalOptions="StartAndExpand" MaximumHeightRequest="75">
+            <Image
+            Source="wguowl.jpg"
+            Aspect="AspectFit"
+            SemanticProperties.Description="WGU Logo"/>
+            <Label
+            Text="WGU Course Tracker"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
+            VerticalTextAlignment="Center" 
+            FontAutoScalingEnabled="True" TextColor="#FFFFFF" FontSize="Medium"/>
+        </HorizontalStackLayout>
+        <Label
+             x:Name="Label"
+             Text=""
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1"
+             HorizontalTextAlignment="Center"
+             TextColor="Black"/>
+        <HorizontalStackLayout
+             Spacing ="50">
+            <Label Text="Notifications: " />
+            <Switch
+                x:Name="Switch1"
+                IsToggled="false" OnColor="#008E00" 
+                Toggled="Switch1_Toggled"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+             Spacing ="50">
+            <Label Text="Start Date:" />
+            <Switch
+                x:Name="Switch2"
+                IsToggled="false" OnColor="#008E00" 
+                Toggled="OnToggled"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+             Spacing ="50">
+            <Label Text="EndDate: " />
+            <Switch 
+                x:Name="Switch3"
+                IsToggled="false" OnColor="#008E00" 
+                Toggled="OnToggled"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout
+        x:Name="BottomButtons"
+        HorizontalOptions="Center"
+        Spacing="100">
+            <Button
+            x:Name="SaveBtn"
+            Text="Save" 
+            Clicked="SaveBtn_Clicked"
+            Background="#DEDEDE"
+            BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+            <Button
+            x:Name="CancelBtn"
+            Text="Cancel" 
+            Clicked="CancelBtn_Clicked"
+            Background="#DEDEDE"
+            BorderWidth="1" BorderColor="#000000" HorizontalOptions="End" TextColor="#000000"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

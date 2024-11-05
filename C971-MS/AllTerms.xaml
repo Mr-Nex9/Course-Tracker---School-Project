@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_MS.AllTerms">
+    
+    
+    <VerticalStackLayout
+     Padding="0,0"
+     Spacing="10" Background="#FFFFFF">
+        <HorizontalStackLayout
+         Background ="#003058"
+         Spacing="15"
+         VerticalOptions="StartAndExpand" MaximumHeightRequest="75">
+            <Image
+             Source="wguowl.jpg"
+             Aspect="AspectFit"
+             SemanticProperties.Description="WGU Logo"/>
+            <Label
+             Text="WGU Course Tracker"
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1"
+             VerticalTextAlignment="Center" 
+             FontAutoScalingEnabled="True" TextColor="#FFFFFF" FontSize="Medium"/>
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+         Padding="20,0"
+         Spacing="25"
+            x:Name= "TermContainer">
+            <Label
+                x:Name="TermLabel"
+                Text="Degree Plan"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                HorizontalTextAlignment="Center"
+                TextColor="Black"
+                Padding="0,0,0,20"/>
+
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout
+         x:Name="BottomButtons"
+         Padding="0,60,0,0"
+         HorizontalOptions="Center"
+         Spacing="40">
+            <Button
+             x:Name="TermBtn"
+             Text="Add Term" 
+             Clicked="TermBtn_Clicked"
+             Background="#DEDEDE"
+             BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+            <Button
+             x:Name="EditBtn"
+             Text="Edit Terms" 
+             Clicked="EditBtn_Clicked"
+             Background="#DEDEDE"
+             BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+        </HorizontalStackLayout>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

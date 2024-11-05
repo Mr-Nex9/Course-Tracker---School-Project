@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_MS.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="0,0"
+            Spacing="10" Background="#FFFFFF">
+            <HorizontalStackLayout
+                Background ="#003058"
+                Spacing="15"
+                VerticalOptions="StartAndExpand" MaximumHeightRequest="75">
+                <Image
+                    Source="wguowl.jpg"
+                    Aspect="AspectFit"
+                    SemanticProperties.Description="WGU Logo"/>
+                <Label
+                    Text="WGU Course Tracker"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    VerticalTextAlignment="Center" 
+                    FontAutoScalingEnabled="True" TextColor="#FFFFFF" FontSize="Medium"/>
+            </HorizontalStackLayout>
+            <VerticalStackLayout
+                x:Name="CourseContainer"
+                Padding="20,0"
+                Spacing="25">
+                <Label
+                    x:Name="TermLabel"
+                    Text=""
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Medium"
+                    TextColor="Black"
+                    Padding="0,0,0,20"/>
+
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout
+                x:Name="BottomButtons"
+                Padding="0,60,0,0"
+                HorizontalOptions="Center"
+                Spacing="20">
+                <Button
+                    x:Name="TermBtn"
+                    Text="All Terms" 
+                    Clicked="TermBtn_Clicked"
+                    Background="#DEDEDE"
+                    BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+                <Button
+                    x:Name="EditBtn"
+                    Text="Delete Courses" 
+                    Clicked="EditBtn_Clicked"
+                    Background="#DEDEDE"
+                    BorderWidth="1" BorderColor="#000000" TextColor="#000000"/>
+                <Button
+                    x:Name="AddBtn"
+                    Text="Add Course" 
+                    Clicked="AddBtn_Clicked"
+                    Background="#DEDEDE"
+                    BorderWidth="1" BorderColor="#000000" HorizontalOptions="End" TextColor="#000000"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
